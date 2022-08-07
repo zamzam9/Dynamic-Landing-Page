@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulating the DOM</title>
+    <!--Load styles-->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <!--il elements is going to be added to this empty ul using JS-->
+        <ul id="navbar__list"></ul>
+      </nav>
+    </header>
+
+    <main>
+      <header class="main__hero">
+        <h1>Landing Page</h1>
+      </header>
+       <!--sections that contain the main contenet of the page and li elements are added to the navigation bar according to the number of these sections.
+       These sections has ids to attach them to the li using an anchor element tht is added dynamically through JS.
+       And contain a class to distinguish them while scrolling-->
+      <section id="section1" class="your-active-class">
+        <div class="landing__container">
+          <h2>Section 1</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis cumque qui tenetur corrupti repellat. Sed voluptates nisi ab repellendus architecto eligendi temporibus dolor, quas aliquid deleniti animi? Sint, reprehenderit dolor? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, in saepe voluptates porro aut sunt eos eum blanditiis quod veritatis perferendis. Possimus sit atque voluptatum nihil non itaque! Iure, facilis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A quam, ipsum veniam nisi deleniti asperiores commodi, vel atque suscipit iusto officiis. Et at nihil repellendus minima eos facilis, neque fugit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis odio amet sint odit esse maiores, harum a ullam. Eveniet nobis quam illo repudiandae aspernatur fugiat similique laudantium repellendus odio! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </section>
+
+      <section id="section2">
+        <div class="landing__container">
+          <h2>Section 2</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo ut harum optio sunt doloribus quibusdam ducimus odio fugit magnam, officia dolores architecto in, mollitia aperiam asperiores tenetur aspernatur obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed temporibus rerum neque beatae error numquam earum nobis molestiae accusamus minima quibusdam veniam sapiente iure velit blanditiis, fugit illo dolores officia? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ut ipsum corporis officia praesentium libero, tenetur atque fugiat provident maxime laboriosam fugit nihil hic repellendus vero id placeat labore aut.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, eligendi similique sint at incidunt adipisci in, officia nemo ut nesciunt nisi nihil facilis alias atque, deserunt sed numquam optio eos? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </section>
+
+      <section id="section3">
+        <div class="landing__container">
+          <h2>Section 3</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit consequuntur veritatis, eligendi praesentium ipsa, omnis unde nam dolor distinctio, ea nobis neque enim? Eum distinctio quis exercitationem eaque aliquid ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed laborum doloremque quis temporibus, omnis architecto soluta aperiam explicabo, placeat voluptatem animi pariatur mollitia ipsam fugiat. Minima magnam autem iste accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos perferendis in fuga veniam ipsum, nesciunt deserunt quo sequi veritatis fugiat cumque sunt corrupti quia blanditiis totam, earum rem nemo!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laborum omnis et temporibus quam iure a assumenda. Illum cumque delectus cum fugiat. Ipsam odio soluta dolore itaque, labore assumenda libero! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </section>
+
+      <section id="section4">
+        <div class="landing__container">
+          <h2>Section 4</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ex nemo explicabo quae dicta saepe facilis. Voluptate pariatur assumenda, modi repudiandae mollitia, ipsa impedit perspiciatis accusamus maxime deleniti in tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dicta doloremque cum non omnis temporibus quam ratione blanditiis quasi nulla. Doloremque eveniet quod deserunt deleniti repellat numquam sapiente delectus voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quae nihil quisquam cumque, optio saepe at beatae unde sunt perspiciatis excepturi error veritatis vel, esse tenetur consequatur aliquam ipsum fugit!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quo laudantium expedita recusandae voluptas. Pariatur possimus velit commodi eveniet dolore cupiditate est necessitatibus debitis distinctio illo, laborum repellat! Minus, officiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nam natus dolorem placeat.</p>
+        </div>
+      </section>
+
+      <section id="section5" class="your-active-class">
+        <div class="landing__container">
+          <h2>Section 5</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis cumque qui tenetur corrupti repellat. Sed voluptates nisi ab repellendus architecto eligendi temporibus dolor, quas aliquid deleniti animi? Sint, reprehenderit dolor? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, in saepe voluptates porro aut sunt eos eum blanditiis quod veritatis perferendis. Possimus sit atque voluptatum nihil non itaque! Iure, facilis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A quam, ipsum veniam nisi deleniti asperiores commodi, vel atque suscipit iusto officiis. Et at nihil repellendus minima eos facilis, neque fugit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis odio amet sint odit esse maiores, harum a ullam. Eveniet nobis quam illo repudiandae aspernatur fugiat similique laudantium repellendus odio! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page__footer">
+      <p>&copy Udacity</p>
+    </footer>
+    
+    <!--Loading the JS file-->
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
